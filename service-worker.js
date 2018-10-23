@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/Robert-OP/contact-manager/precache-manifest.9bcc2f687a89478e17e0d4a4129d044d.js"
+  "/contact-manager/precache-manifest.c861af1a9562e4d389a493cd6b407cfc.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Robert-OP/contact-manager/index.html", {
+workbox.routing.registerNavigationRoute("/contact-manager/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
