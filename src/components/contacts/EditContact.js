@@ -48,13 +48,14 @@ class EditContact extends Component {
       return;
     }
 
+    const { id } = this.props.match.params;
+
     const updContact = {
+      id,
       name,
       email,
       phone
     };
-
-    const { id } = this.props.match.params;
 
     const res = await axios.put(
       `https://jsonplaceholder.typicode.com/users/${id}`,
@@ -117,7 +118,7 @@ class EditContact extends Component {
                   />
                   <input
                     type="submit"
-                    value="Edit Contact"
+                    value="Update Contact"
                     className="btn btn-light btn-block"
                   />
                 </form>
